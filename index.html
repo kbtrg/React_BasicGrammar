@@ -8,13 +8,14 @@
   <body>
     <script>
       console.log("コンソールログのテスト"); //console.logが発動しない...
-      /*四則演算*/
-      //再宣言不可能、再代入可能
+      /*letは再宣言不可能、再代入可能*/
       let a = 1;
       let b = 2;
       let c = 3;
       document.write(`a=1, b=2, c=3`);
       document.write(`\n`); //改行反映されない...
+
+      /*四則演算*/
       document.write(`a + b = ${a + b}`); //a+b=3
       document.write(`a - b = ${a - b}`); //a-b=-1
       document.write(`a * b = ${a * b}`); //a+b=2
@@ -44,6 +45,41 @@
       while (i < 3) {
         document.write(`3回表示します`);
         i++;
+      }
+
+      /*if else文*/
+      if (a === a) {
+        document.write("true");
+      } else {
+        document.write("false");
+      }
+
+      /*switch文*/
+      const str = "B";
+      switch (str) {
+        case "A":
+          document.write(`A`);
+          break;
+        case "B":
+          document.write(`B`);
+          break;
+        case "C":
+          document.write(`C`);
+          break;
+        default:
+          break;
+      }
+
+      /*try catch文*/
+      function positiveNumber(num) {
+        if (num < 0) {
+          throw new Error(`${num} is not positive!`); //errorメッセージを投げる
+        }
+      }
+      try {
+        positiveNumber(-1);
+      } catch (error) {
+        document.write(`${error.message}`); //errorメッセージの表示
       }
     </script>
     <script src="src/index.js"></script>
