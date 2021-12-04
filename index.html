@@ -1,89 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Kihon-Bunpou</title>
+    <title>react_kadai</title>
     <meta charset="UTF-8" />
   </head>
 
   <body>
-    <script>
-      console.log("コンソールログのテスト"); //console.logが発動しない...
-      /*letは再宣言不可能、再代入可能*/
-      let a = 1;
-      let b = 2;
-      let c = 3;
-      document.write(`a=1, b=2, c=3`);
-      document.write("`"); //改行反映されない...
-
-      /*四則演算*/
-      document.write(`a + b = ${a + b}`); //a+b=3
-      document.write(`a - b = ${a - b}`); //a-b=-1
-      document.write(`a * b = ${a * b}`); //a+b=2
-      document.write(`a / b = ${a / b}`); //a+b=0.5
-      document.write(`++a = ${++a}`); //a++=2
-      document.write(`--a = ${--a}`); //a--=1 前の結果から1引く
-
-      /*比較演算子*/
-      document.write(`a === a -> ${a === a}`); //1=1
-      document.write(`a !== a -> ${a !== a}`); //1!=1
-      document.write(`a < b -> ${a < b}`); //1<2
-
-      /*論理演算子*/
-      document.write(`a === a && b === b -> ${a === a && b === b}`); //1=1かつ2=2 -> true
-      document.write(`a === a || b !== b -> ${a == a || b !== b}`); //1=1または2!=2 -> true
-      document.write(`!(a === a) -> ${!(a === a)}`); //!(1=1) -> false
-      document.write(`(a===a) ? b : c -> ${a === a ? b : c}`); //if(a=a){b}else{c}
-
-      /*for文*/
-      const array = [1, 2, 3];
-      for (let i = 0; i < array.length; i++) {
-        document.write(`array[${i}] = ${array[i]}, `);
-      }
-
-      /*while文*/
-      let i = 0;
-      while (i < 3) {
-        document.write(`3回表示します`);
-        i++;
-      }
-
-      /*if else文*/
-      if (a === a) {
-        document.write("true");
-      } else {
-        document.write("false");
-      }
-
-      /*switch文*/
-      const str = "B";
-      switch (str) {
-        case "A":
-          document.write(`A`);
-          break;
-        case "B":
-          document.write(`B`);
-          break;
-        case "C":
-          document.write(`C`);
-          break;
-        default:
-          break;
-      }
-
-      /*try catch文*/
-      function positiveNumber(num) {
-        if (num < 0) {
-          throw new Error(`${num} is not positive!`); //errorメッセージを投げる
-        }
-      }
-      try {
-        positiveNumber(-1);
-      } catch (error) {
-        document.write(`${error.message}`); //errorメッセージの表示
-      }
-    </script>
-
-    <div id="app"></div>
-    <script src="src/index.js"></script>
+    <!-- jsファイルを読み込んで表示 -->
+    <script src="src/kadai3.js"></script>
+    <script src="src/kadai4.js"></script>
   </body>
 </html>
