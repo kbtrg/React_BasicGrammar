@@ -1,5 +1,3 @@
-import "./styles.css";
-
 /*第3回課題*/
 document.write(
   "------------------------------------------------------------<br><br>"
@@ -32,7 +30,7 @@ document.write(`a < b -> ${a < b} <br><br>`); //1<2
 /*論理演算子*/
 document.write("【論理演算子】<br>");
 document.write(`a === a && b === b -> ${a === a && b === b} <br>`); //1=1かつ2=2 -> true
-document.write(`a === a || b !== b -> ${a == a || b !== b} <br>`); //1=1または2!=2 -> true
+document.write(`a === a || b !== b -> ${a === a || b !== b} <br>`); //1=1または2!=2 -> true
 document.write(`!(a === a) -> ${!(a === a)} <br>`); //!(1=1) -> false
 document.write(`(a===a) ? b : c -> ${a === a ? b : c} <br><br>`); //if(a=a){b}else{c}
 
